@@ -58,41 +58,43 @@
  ┗ 📜 requirements.txt    # 의존성 패키지 목록
 ```
 ## 🚀 시작하기 (Getting Started)
-1. 필수 프로그램 설치
-Python 3.10 이상
 
-Ollama (Local LLM 구동기)
+### 1. 필수 프로그램 설치
+* [Python 3.10 이상](https://www.python.org/)
+* [Ollama](https://ollama.com/) (Local LLM 구동기)
 
-2. LLM 모델 다운로드
+### 2. LLM 모델 다운로드
 터미널(PowerShell)에서 아래 명령어로 모델을 다운로드합니다.
-
-Bash
-
+```bash
 ollama pull llama3.1
-3. 프로젝트 설치
-Bash
+```
 
-# 저장소 클론 (본인의 GitHub 주소로 변경 필요)
+### 3. 프로젝트 설치
+```bash
+# 저장소 클론
 git clone [https://github.com/Munsik-Kim/Local-LLM-jarvis.git](https://github.com/Munsik-Kim/Local-LLM-jarvis.git)
 
 # 패키지 설치
 pip install -r requirements.txt
-4. 실행
-Bash
+```
 
+### 4. 실행
+```bash
 streamlit run app.py
-🔒 보안 및 프라이버시 (Privacy)
+```
+
+---
+
+## 🔒 보안 및 프라이버시 (Privacy)
 이 프로젝트의 모든 데이터 처리는 **사용자의 컴퓨터 내부(Local)**에서만 이루어집니다.
+* 학습시킨 문서 파일
+* 대화 내용 (DB)
+* 카메라/이미지 데이터
+위 정보는 외부 서버로 전송되지 않으므로, 회사 기밀 문서나 개인 자료를 안전하게 다룰 수 있습니다.
 
-학습시킨 문서 파일
+---
 
-대화 내용 (DB)
-
-카메라/이미지 데이터 위 정보는 외부 서버로 전송되지 않으므로, 회사 기밀 문서나 개인 자료를 안전하게 다룰 수 있습니다.
-
-👨‍💻 Developer
-Name: Munsik Kim
-
-Role: AI Application Developer
-
-Environment: Windows 11 / RTX 5080 / WSL2
+## 👨‍💻 Developer
+* **Name:** Munsik Kim
+* **Role:** AI Application Developer
+* **Environment:** Windows 11 / RTX 5080 / WSL2
