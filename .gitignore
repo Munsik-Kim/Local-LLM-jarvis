@@ -1,0 +1,27 @@
+# .gitignore - 깃허브 업로드 제외 목록
+
+# 1. 파이썬 기본 제외 파일
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 2. 가상환경 폴더 (만약 있다면)
+venv/
+env/
+.env
+
+# 3. 데이터베이스 및 기억 저장소 (개인정보 보호) ⭐
+chat_history.db
+db_storage/
+
+# 4. 테스트하느라 올린 파일들
+*.pdf
+*.txt
+*.jpg
+*.png
+*.jpeg
+*.webp
+
+# 단, 설명서는 제외하지 않음
+!requirements.txt
+!README.md
